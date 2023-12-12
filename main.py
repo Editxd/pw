@@ -41,7 +41,7 @@ async def account_login(bot: Client, m: Message):
         "Send **Number or email** in this manner otherwise bot will not respond.\n\nSend like this:-  **mobile no.**"
     )  
     input1: Message = await bot.listen(editable.chat.id)
-    raw_text1=str(input1.text)
+    raw_text1=input1
     
 headers={
 "Host": "api.penpencil.xyz",
